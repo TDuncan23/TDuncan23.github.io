@@ -44,22 +44,24 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
     createPlatform(500, 660, 200, 20);
-    createPlatform(550, 570, 100, 20);
-    createPlatform(800, 530, 150, 20);
-    createPlatform(1000, 500, 200, 20);
+    createPlatform(550, 570, 30, 20);
+    createPlatform(800, 530, 50, 20);
+    createPlatform(1000, 500, 100, 20);
     createPlatform(900, 375, 100, 20);
     createPlatform(1100, 310, 150, 20);
-    createPlatform(1300, 250, 200, 20);
-    createPlatform(1100, 900, 200, 20);
+    createPlatform(1300, 250, 100, 20);
+    createPlatform(1100, 900, 28, 20);
+    createPlatform(780, 650, 20, 20);
+    createPlatform(800, 600, 100, 10);
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("bron", 500, 699, 15, 0.45);
-    createCollectable("bosh", 800, 375, 30, 0.1);
-    createCollectable("wade", 1300, 212, 48, 0.6);
+    createCollectable("bron", 500, 699, 15, 0.45);  // creates a "steve" collectible at the coordinates (500, 699), falling with a high gravity of 15 and bouncing with 45% bounce
+    createCollectable("bosh", 800, 375); // creates a "steve" collectible at the coordinates (800, 375), falling with default gravity and bouncing with default bounce %
+    createCollectable("wade", 1300, 212, 48, 0.2); // creates a "grace" collectible at the coordinates (1300, 212), falling with a high gravity of 48 and bouncing with 20% bounce
 
     // TODO 3
     // Create cannons
@@ -67,11 +69,10 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon("left", 620, 1600);
-    createCannon("top", 570, 3000);
-    createCannon("right", 500, 2000);
-    createCannon("bottom", 300, 2800)
-
+    createCannon("left", 620, 1000); // cannon on left wall, 620px down, shooting once per second
+    createCannon("top", 570, 1000); // cannon on top wall, 570px down, shooting once per second
+    createCannon("right", 500, 1000); // cannon on right wall, 500px down, shooting once per second
+   
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
