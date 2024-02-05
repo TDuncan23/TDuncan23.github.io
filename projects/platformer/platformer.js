@@ -59,7 +59,7 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("steve", 500, 699, 15, 0.45);  // creates a "steve" collectible at the coordinates (500, 699), falling with a high gravity of 15 and bouncing with 45% bounce
+    createCollectable("steve", 500, 660, 15, 0.45);  // creates a "steve" collectible at the coordinates (500, 699), falling with a high gravity of 15 and bouncing with 45% bounce
     createCollectable("steve", 800, 375); // creates a "steve" collectible at the coordinates (800, 375), falling with default gravity and bouncing with default bounce %
     createCollectable("grace", 1300, 212, 48, 0.2); // creates a "grace" collectible at the coordinates (1300, 212), falling with a high gravity of 48 and bouncing with 20% bounce
 
@@ -69,8 +69,8 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon("left", 620, 1000); // cannon on left wall, 620px down, shooting once per second
-    createCannon("top", 570, 1000); // cannon on top wall, 570px down, shooting once per second
+    createCannon("left", 680, 1000); // cannon on left wall, 680px down, shooting once per second
+    createCannon("top", 570, 1700); // cannon on top wall, 570px down, shooting once per second
     createCannon("right", 500, 1000); // cannon on right wall, 500px down, shooting once per second
    
     /////////////////////////////////////////////////
