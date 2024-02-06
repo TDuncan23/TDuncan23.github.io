@@ -61,7 +61,7 @@ $(function () {
 
     createCollectable("steve", 480, 620, 15, 0.45);  // creates a "steve" collectible at the coordinates (500, 699), falling with a high gravity of 15 and bouncing with 45% bounce
     createCollectable("steve", 800, 375); // creates a "steve" collectible at the coordinates (800, 375), falling with default gravity and bouncing with default bounce %
-    createCollectable("grace", 1300, 212, 48, 0.2); // creates a "grace" collectible at the coordinates (1300, 212), falling with a high gravity of 48 and bouncing with 20% bounce
+    createCollectable("grace", 1300, 212, 48, 0.2); // creates a "grace" collectible at the coordinates (1300, 212), falling with a high gravity of 20 and bouncing with 20% bounce
 
     // TODO 3
     // Create cannons
@@ -72,7 +72,7 @@ $(function () {
     createCannon("left", 580, 1700); // cannon on left wall, 680px down, shooting once per second
     createCannon("top", 800, 2100); // cannon on top wall, 570px down, shooting once per second
     createCannon("right", 500, 1500); // cannon on right wall, 500px down, shooting once per second
-    createCannon("top", 1270, 1050); // cannon on bottom wall, 1270px down, shooting once per second
+    createCannon("top", 1270, 800); // cannon on bottom wall, 1270px down, shooting once per second
    
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
